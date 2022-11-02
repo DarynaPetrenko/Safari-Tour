@@ -1,0 +1,449 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    width: 1180px;
+    margin: 0 auto;
+}
+.button{
+    margin: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #f2e709;
+    color: #64affc;
+    border: none;
+    transition: color 0.3s linear, background-color 0.3s linear;
+}
+.button:hover{
+    cursor: pointer;
+    color: #f2e709;
+    background-color: #64affc;
+}
+.bg1, .bg1::after, .bg1::before{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bg1{
+    background-image: url('../img/bg1/bg.png');
+    min-height: 1100px;
+    position: relative;
+}
+.bg1::after{
+    content: '';
+    display: block;
+    height: 700px;
+    width: 100%;
+    background-image: url('../img/bg1/cloud_behind.png');
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+.bg1::before{
+    content: '';
+    display: block;
+    height: 600px;
+    width: 100%;
+    background-image: url('../img/bg1/cloud_font.png');
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+}
+
+/* HEADER */
+.header{
+    min-height: 120px;
+}
+.nav-menu, .header-nav, .logo{
+    position: absolute;
+}
+.nav-menu{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    top: 160px;
+    transform: rotate(2deg);
+    width: 520px;
+    right: 150px;
+}
+.nav-menu__link{
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    font-family: 'Source Serif 4', serif; 
+    font-weight: 400;
+    font-size: 17px;
+    text-shadow: 0;
+    transition: text-shadow 0.2s linear;
+}
+.nav-menu__link:hover{
+    text-shadow: 1px 0 5px #127ea5,
+     0 1px 5px #127ea5, 
+    -1px 0 5px #127ea5, 
+    0 -1px 5px #127ea5;
+}
+.header-nav{
+    width: 1080px;
+    background-color: #4cb2e7;
+    height: 220px;
+    border-radius: 15px;
+    transform: rotate(-2deg);
+    top: -120px;
+}
+.logo{
+    display: block;
+    height: 220px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #e1ecf2;
+    border-radius: 15px;
+    border: 10px solid #ffffff;
+    box-shadow: 5px 6px 14px -4px #4cb2e7;
+    transform: rotate(-5deg);
+    top: 30px;
+    left: 50px;
+}
+.logo-name, .logo-desc{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: #299fca;
+}
+.logo-name{
+    font-weight: 900;
+    margin-top: 102px;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+.logo-desc{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+
+/* BOOK-FORM */
+.booking-form-section{
+    min-height: 500px;
+    margin-bottom: 100px;
+}
+.book-form, .book-form::before, .book-form__btn{
+    display: block;
+}
+.book-form{
+    height: 556px;
+    width: 340px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/bg1/booking_form_bg.png');
+    position: absolute;
+    top: 10%;
+    right: 15%;
+}
+.book-form::before{
+    content: '';
+    width: 648px;
+    height: 285px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/bg1/banner_plane.png');
+    position: absolute;
+    right: 135%;
+    top: 20%;
+    z-index: 5;
+}
+
+.form-container{
+    width: 260px;
+    margin: 0 auto;
+}
+.book-form__title, .book-form__label, .book-form__input,
+.book-form__btn{
+    font-family: 'Source Serif 4', sans-serif; 
+}
+.book-form__title{
+    font-weight: 400;
+    font-size: 21px;
+    margin-top: 42px;
+    margin-left: 22px;
+    margin-bottom: 36px;
+}
+.book-input-block{
+    display: flex;
+    width: 256px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.book-form__input{
+    width: 172px;
+    height: 32px;
+    outline: none;
+    border-radius: 5px;
+    border: 4px solid #a7d1e6;
+    color: #299fca;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 6px;
+    box-sizing: border-box;
+}
+.book-input-block{
+    margin-bottom: 14px;
+}
+.book-form__message{
+    resize: none;
+    height: 58px;
+}
+.book-form__label{
+    width: 76px;
+    text-align: right;
+    font-weight: 600;
+    text-shadow: 1px 0 5px #127ea5,
+     0 1px 5px #127ea5, 
+    -1px 0 5px #127ea5, 
+    0 -1px 5px #127ea5;
+}
+.book-form__select{
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('../img/bg1/select_arrow.png');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.select__label{
+    position: relative;
+}
+.submit-btn{
+    display: flex;
+    width: 256px;
+    justify-content: right;
+}
+.book-form__btn{
+    padding: 10px 22px;
+    position: relative;
+    z-index: 10;
+}
+
+
+/* special-offers-section */
+
+.our-offers-block{
+    display: flex;
+    justify-content: space-between;
+}
+.special-offers-section{
+    min-height: 300px;
+    position: relative;
+    z-index: 80;
+}
+.special-offers-title{
+    font-family: 'Lobster Two', cursive;
+    font-weight: 400;
+    font-size: 29px;
+    margin-bottom: 40px;
+}
+.special-offers-block{
+    width: 340px;
+    font-family: 'Arimo', sans-serif; 
+}
+.special-offer{
+    padding-bottom: 20px;
+}
+.special-offer:first-of-type{
+    border-bottom: dotted 3px #ffffff;
+    margin-bottom: 30px;
+}
+.special-offer__img, .special-offer__text{
+    vertical-align: top;
+}
+.special-offer__img{
+    margin-right: 14px;
+}
+.special-offer__text{
+    width: 220px;
+    height: 63px;
+    padding: 0;
+    margin-bottom: 16px;
+}
+.offer-desc{
+    height: 37px;
+    overflow: hidden;
+}
+.offer-desc::-webkit-scrollbar{
+    width: 7px;
+    height: 5px;
+}::-webkit-scrollbar-track-piece{
+	background-color: #949292;
+    width: 2px;
+}::-webkit-scrollbar-thumb:vertical{
+    background-image: url(../img/scrool-bar.png);
+    width: 8px;
+    height: 20px;
+}
+.offer-title, .offer-desc{
+    padding: 0;
+    margin: 0;
+}
+.offer-title{
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+.offer-desc{
+    font-size: 12px;
+}
+.offer-price, .read-more-btn, .special-offer__img, .special-offer__text{
+    display: inline-block;
+}
+.offer-price{
+    font-family: 'Orelega One', cursive;
+    font-size: 27px;
+    vertical-align: middle;
+    margin: 0 18px 0 140px;
+}
+.read-more-btn{
+    padding: 8px 10px;
+    vertical-align: middle;
+}
+
+
+
+.summer-offers-block{
+    width: 580px;
+}
+.summer-offers__tours-table{
+    font-size: 14px;
+    padding: 20px 0;
+    border-top: 2px solid #81ffff;
+    position: relative;
+    min-height: 320px;
+}
+.summer-offers-block::before{
+    content: '';
+    width: 177px;
+    height: 95px;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../img/bg1/special_summer.png');
+    position: absolute;
+    top: -29.5%;
+    right: 0;
+}
+.tours-table__offer{
+    display: flex;
+    justify-content: space-between;
+    width: 580px;
+}
+.tours-table__offer:not(:last-child){
+    margin-bottom: 14px;
+}
+.tours-table__offer-desc{
+    width: 330px;
+    display: inline-block;
+}
+.tours-table__offer-desc::before{
+    content: '';
+    width: 11px;
+    height: 12px;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../img/bg1/table-arrow.png');
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.tours-table__offer-period{
+    width: 52px;
+}
+.tours-table__offer-details{
+    width: 86px;
+}
+.tours-table__offer-details-link{
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    transition: color 0.2s linear;
+}
+.tours-table__offer-details-link:hover{
+    color: #f2e709;
+}
+.summer-offers-block{
+    position: relative;
+}
+.summer-offers__title{
+    position: absolute;
+    top: -14%;
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+}
+.summer-offers__title:hover{
+    cursor: pointer;
+    height: 36px;
+    top: -16%;
+}
+.summer-offers__title:first-of-type{
+    background-color: #81ffff;
+    color: #127ea5;
+    left: 0;
+}
+.summer-offers__title:last-of-type{
+    background-color: #3aa1c7;
+    color: #81ffff;
+    left: 22%;
+}
+
+.photo-table{
+    display: none;
+}
+
+
+.photo-table__desc{
+    margin: 0;
+    width: 180px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.photo-table__photo{
+    margin: 0 auto;
+}
+
+

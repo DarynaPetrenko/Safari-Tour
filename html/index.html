@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Tour</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Lobster+Two:ital@1&family=Orelega+One&family=Roboto+Slab:wght@300;400;900&family=Roboto:wght@300;400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="bg1">
+        <header class="header">
+            <div class="container">
+                <nav class="header-nav">
+                    <div class="logo">
+                        <h1 class="logo-name">Safari Tour</h1>
+                        <p class="logo-desc">International Tour packages</p>
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-menu__item"><a href="#" class="nav-menu__link">Home</a></li>
+                        <li class="nav-menu__item"><a href="../html/inner.html" class="nav-menu__link">Packages</a></li>
+                        <li class="nav-menu__item"><a href="#" class="nav-menu__link">Flights</a></li>
+                        <li class="nav-menu__item"><a href="#" class="nav-menu__link">Trains</a></li>
+                        <li class="nav-menu__item"><a href="#" class="nav-menu__link">Reach us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            </header>
+                <section class="booking-form-section">
+                    <div class="container">
+                        <form action="" class="book-form">
+                            <h2 class="book-form__title">Online Booking</h2>
+                            <div class="form-container">
+                                <div class="input-name book-input-block">
+                                    <label for="name" class="book-form__label">Name :</label>
+                                <input type="text" id="name" class="book-form__input" required>
+                                </div>
+                                <div class="input-email book-input-block">
+                                    <label for="email" class="book-form__label">email :</label>
+                                <input type="email" id="email" class="book-form__input" required>
+                                </div>
+                                <div class="input-package book-input-block">
+                                    <label for="package" class="book-form__label select__label">Package :</label>
+                                <select name="package" id="package" class="book-form__input book-form__select">
+                                    <option value="Africa">Africa Packages</option>
+                                    <option value="Eurasia">Eurasia Packages</option>
+                                    <option value="North America">North America Packages</option>
+                                    <option value="South America">South America Packages</option>
+                                    <option value="Antarctica">Antarctica Packages</option>
+                                    <option value="Australia">Australia Packages</option>
+                                </select>
+                                </div>
+                                <div class="input-message book-input-block">
+                                    <label for="message" class="book-form__label">message :</label>
+                                <textarea name="message" id="message" class="book-form__message book-form__input"></textarea>
+                                </div>
+                                <div class="submit-btn">
+                                    <button class="book-form__btn button">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+
+                <section class="special-offers-section container">
+                    <h2 class="special-offers-title">Our Special Offers</h2>
+                    <div class="our-offers-block">
+                        <div class="special-offers-block">
+                            <div class="special-offer">
+                                <img src="../img/bg1/offer1.png" class="special-offer__img" alt="offer1" width="84" height="63">
+                                <div class="special-offer__text">
+                                    <h3 class="offer-title">914 translation</h3>
+                                <p class="offer-desc">
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi aut, 
+                                    quia obcaecati adipisci debitis libero rerum fugit tenetur unde optio 
+                                    cumque odit atque quam eligendi voluptatum earum explicabo nobis error?
+                                </p>
+                                </div>
+                                <p class="offer-price">700$</p>
+                                <button class="read-more-btn button" onclick="showText(this, 0)">Read more</button>
+                            </div>
+    
+                            <div class="special-offer">
+                                <img src="../img/bg1/offer2.png" class="special-offer__img" alt="offer1" width="84" height="63">
+                                <div class="special-offer__text">
+                                    <h3 class="offer-title">914 translation</h3>
+                                <p class="offer-desc">
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi aut, 
+                                    quia obcaecati adipisci debitis libero rerum fugit tenetur unde optio 
+                                    cumque odit atque quam eligendi voluptatum earum explicabo nobis error?
+                                </p>
+                                </div>
+                                <p class="offer-price">700$</p>
+                                <button class="read-more-btn button" onclick="showText(this, 1)">Read more</button>
+                            </div>
+                        </div>
+    
+    
+                        <div class="summer-offers-block">
+                                <div class="summer-offers__captions">
+                                    <h3 class="summer-offers__title tours-title" onclick="showTours(this)">Tours</h3>
+                                    <h3 class="summer-offers__title photo-title" onclick="showPhotos(this)">Photos</h3>
+                                </div>
+                            <table class="summer-offers__tours-table tours-table">
+                                <tr class="tours-table__offer">
+                                    <td class="tours-table__offer-desc">Lorem Ipsum is simply dummy text simply </td>
+                                    <td class="tours-table__offer-period">10 Days</td>
+                                    <td class="tours-table__offer-details"><a href="../html/inner.html" class="tours-table__offer-details-link">more details</a></td>
+                                </tr>
+
+                                <tr class="tours-table__offer">
+                                    <td class="tours-table__offer-desc">Printing and typesetting industry typesetting  </td>
+                                    <td class="tours-table__offer-period">10 Days</td>
+                                    <td class="tours-table__offer-details"><a href="../html/inner.html" class="tours-table__offer-details-link">more details</a></td>
+                                </tr>
+
+                                <tr class="tours-table__offer">
+                                    <td class="tours-table__offer-desc">Has been the industry's standard  </td>
+                                    <td class="tours-table__offer-period">11 Days</td>
+                                    <td class="tours-table__offer-details"><a href="../html/inner.html" class="tours-table__offer-details-link">more details</a></td>
+                                </tr>
+
+                                <tr class="tours-table__offer">
+                                    <td class="tours-table__offer-desc">Dummy text ever since the 1500s Ipsum is simpl </td>
+                                    <td class="tours-table__offer-period">22 Days</td>
+                                    <td class="tours-table__offer-details"><a href="../html/inner.html" class="tours-table__offer-details-link">more details</a></td>
+                                </tr>
+
+                                <tr class="tours-table__offer">
+                                    <td class="tours-table__offer-desc">Lorem Ipsum is simply dummy text simply  </td>
+                                    <td class="tours-table__offer-period">13 Days</td>
+                                    <td class="tours-table__offer-details"><a href="../html/inner.html" class="tours-table__offer-details-link">more details</a></td>
+                                </tr>
+
+                                <tr class="tours-table__offer">
+                                    <td class="tours-table__offer-desc">Printing and typesetting industry Printing  </td>
+                                    <td class="tours-table__offer-period">17 Days</td>
+                                    <td class="tours-table__offer-details"><a href="../html/inner.html" class="tours-table__offer-details-link">more details</a></td>
+                                </tr>
+
+                                <tr class="tours-table__offer">
+                                    <td class="tours-table__offer-desc">Has been the industry's standard  </td>
+                                    <td class="tours-table__offer-period">19 Days</td>
+                                    <td class="tours-table__offer-details"><a href="../html/inner.html" class="tours-table__offer-details-link">more details</a></td>
+                                </tr>
+
+                                <tr class="tours-table__offer">
+                                    <td class="tours-table__offer-desc">Dummy text ever since the the industry </td>
+                                    <td class="tours-table__offer-period">16 Days</td>
+                                    <td class="tours-table__offer-details"><a href="../html/inner.html" class="tours-table__offer-details-link">more details</a></td>
+                                </tr>
+                            </table>
+
+
+                            
+
+                            <table class="summer-offers__tours-table photo-table">
+                                <tr class="tours-table__offer">
+                                    <td>
+                                        <p class="photo-table__desc">Lorem Ipsum is simply dummy text simply</p>
+                                        <img class="photo-table__photo" src="../img/bg1/offer1.png" alt="offer img" width="84" height="63">
+                                    </td>
+                                    <td>
+                                        <p class="photo-table__desc">Printing and typesetting industry typesetting</p>
+                                        <img class="photo-table__photo" src="../img/bg1/offer2.png" alt="offer img" width="84" height="63">
+                                    </td>
+                                    <td>
+                                        <p class="photo-table__desc">Has been the industry's standard</p>
+                                        <img class="photo-table__photo" src="../img/bg1/offer1.png" alt="offer img" width="84" height="63">
+                                    </td>
+                                    
+                                </tr>
+                                <tr class="tours-table__offer">
+                                    <td>
+                                        <p class="photo-table__desc">Lorem Ipsum is simply dummy text simply</p>
+                                        <img class="photo-table__photo" src="../img/bg1/offer2.png" alt="offer img" width="84" height="63">
+                                    </td>
+                                    <td>
+                                        <p class="photo-table__desc">Printing and typesetting industry Printing</p>
+                                        <img class="photo-table__photo" src="../img/bg1/offer1.png" alt="offer img" width="84" height="63">
+                                    </td>
+                                    <td>
+                                        <p class="photo-table__desc">Has been the industry's standard</p>
+                                        <img class="photo-table__photo" src="../img/bg1/offer2.png" alt="offer img" width="84" height="63">
+                                    </td>
+                                </tr>
+                                
+
+                                
+                            
+                        </div>
+                    </div>
+                </section>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+</html>
